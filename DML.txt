@@ -1,0 +1,94 @@
+INSERT INTO pracownicy VALUES(11111111111, 'Adam', 'Stoch');
+INSERT INTO pracownicy VALUES(22222222222, 'Mikoaj', 'Maysz');
+INSERT INTO pracownicy VALUES(33333333333, 'Patrycja', 'Klauza');
+INSERT INTO pracownicy VALUES(44444444444, 'Bob', 'Budowniczy');
+INSERT INTO pracownicy VALUES(55555555555, 'Wiktoria', 'Karuzela');
+
+INSERT INTO zespoly VALUES(10);
+INSERT INTO zespoly VALUES(20);
+INSERT INTO zespoly VALUES(30);
+
+INSERT INTO pracownicy_zespoly VALUES(10, 44444444444);
+INSERT INTO pracownicy_zespoly VALUES(10, 22222222222);
+INSERT INTO pracownicy_zespoly VALUES(10, 11111111111);
+INSERT INTO pracownicy_zespoly VALUES(20, 33333333333);
+INSERT INTO pracownicy_zespoly VALUES(20, 55555555555);
+INSERT INTO pracownicy_zespoly VALUES(30, 44444444444);
+
+INSERT INTO produkty VALUES(1001, NULL, 21.00, 'Duży popcorn');
+INSERT INTO produkty VALUES(2002, NULL, 13, 'Maly popcorn');
+INSERT INTO produkty VALUES(3003, NULL, 17, 'Średni popcorn');
+INSERT INTO produkty VALUES(4004, NULL, 15, 'Duży napój');
+INSERT INTO produkty VALUES(5005, NULL, 9, 'Maly napój');
+
+
+INSERT INTO fotele VALUES(9001, 1, 'A', 1);
+INSERT INTO fotele VALUES(9002, 1, 'A', 2);
+INSERT INTO fotele VALUES(9003, 1, 'A', 3);
+INSERT INTO fotele VALUES(9004, 1, 'B', 1);
+INSERT INTO fotele VALUES(9005, 1, 'B', 2);
+INSERT INTO fotele VALUES(9006, 1, 'B', 3);
+INSERT INTO fotele VALUES(9007, 1, 'B', 4);
+INSERT INTO fotele VALUES(9008, 1, 'B', 5);
+INSERT INTO fotele VALUES(9009, 1, 'C', 1);
+INSERT INTO fotele VALUES(90010, 1, 'C', 2);
+INSERT INTO fotele VALUES(90011, 1, 'C', 3);
+INSERT INTO fotele VALUES(90012, 1, 'C', 4);
+INSERT INTO fotele VALUES(90013, 1, 'C', 5);
+INSERT INTO fotele VALUES(90014, 1, 'E', 1);
+INSERT INTO fotele VALUES(90015, 1, 'E', 2);
+INSERT INTO fotele VALUES(90016, 1, 'E', 3);
+INSERT INTO fotele VALUES(90017, 1, 'E', 4);
+INSERT INTO fotele VALUES(90018, 1, 'E', 5);
+
+INSERT INTO fotele VALUES(9021, 2, 'A', 1);
+INSERT INTO fotele VALUES(9022, 2, 'A', 2);
+INSERT INTO fotele VALUES(9023, 2, 'A', 3);
+INSERT INTO fotele VALUES(9024, 2, 'B', 1);
+INSERT INTO fotele VALUES(9025, 2, 'B', 2);
+INSERT INTO fotele VALUES(9026, 2, 'B', 3);
+INSERT INTO fotele VALUES(9027, 2, 'B', 4);
+INSERT INTO fotele VALUES(9028, 2, 'B', 5);
+INSERT INTO fotele VALUES(9029, 2, 'C', 1);
+INSERT INTO fotele VALUES(90210, 2, 'C', 2);
+INSERT INTO fotele VALUES(90211, 2, 'C', 3);
+INSERT INTO fotele VALUES(90212, 2, 'C', 4);
+INSERT INTO fotele VALUES(90213, 2, 'C', 5);
+INSERT INTO fotele VALUES(90214, 2, 'E', 1);
+INSERT INTO fotele VALUES(90215, 2, 'E', 2);
+INSERT INTO fotele VALUES(90216, 2, 'E', 3);
+INSERT INTO fotele VALUES(90217, 2, 'E', 4);
+INSERT INTO fotele VALUES(90218, 2, 'E', 5);
+
+INSERT INTO rabaty VALUES('Zniżka studencka', 30, 'Dla studentów za okazaniem legitymacji');
+INSERT INTO rabaty VALUES('Zniżka stalego klienta', 10, 'Dla klientów za okazaniem karty stalego klienta');
+
+
+INSERT INTO filmy VALUES( 2233, 'Piraci z polanki', TO_DATE('21-01-2022','dd-mm-yyyy'),'napisy pl');
+INSERT INTO filmy VALUES( 2234, 'Piraci z polanki', TO_DATE('21-01-2022','dd-mm-yyyy'), 'lektor');
+INSERT INTO filmy VALUES( 2235, 'Piraci z polanki', TO_DATE('21-01-2022','dd-mm-yyyy'), 'dubbing');
+
+INSERT INTO filmy VALUES( 2333, 'The trylogy of TC', TO_DATE('21-01-2022','dd-mm-yyyy'), 'napisy pl');
+INSERT INTO filmy VALUES( 2334, 'The trylogy of TC', TO_DATE('21-01-2022','dd-mm-yyyy'), 'lektor');
+INSERT INTO filmy VALUES( 2335, 'The trylogy of TC', TO_DATE('21-01-2022','dd-mm-yyyy'),'dubbing');
+
+INSERT INTO seanse VALUES( 1133, TO_DATE('12-15','hh24-mi'), TO_DATE('14-15','hh24-mi'), 10, 2233);
+INSERT INTO seanse VALUES( 1134, TO_DATE('15-15','hh24-mi'), TO_DATE('17-15','hh24-mi'), 20, 2234);
+
+
+
+INSERT INTO bilety VALUES( 331, 9005, 20, 1133);
+INSERT INTO bilety VALUES( 332, 9006, 20, 1133);
+INSERT INTO bilety VALUES( 333, 9007, 20, 1133);
+INSERT INTO bilety VALUES( 334, 9008, 20, 1133);
+INSERT INTO bilety VALUES( 335, 9009, 20, 1133);
+INSERT INTO bilety VALUES( 336, 90014, 20, 1133);
+INSERT INTO bilety VALUES( 337, 90015, 20, 1133);
+INSERT INTO bilety VALUES( 338, 90017, 20, 1133);
+
+INSERT INTO stali_klienci VALUES( 8101, 'Mariusz', 'Bartosik', TO_DATE('25-03-2018','dd-mm-yyyy'));
+INSERT INTO stali_klienci VALUES( 8102, 'Daniel', 'Mazurczak', TO_DATE('25-01-2018','dd-mm-yyyy'));
+
+INSERT INTO nagrody VALUES( 101, 'Rocznica dolaczenia', TO_DATE('25-03-2022','dd-mm-yyyy'), 8101);
+
+
